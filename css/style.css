@@ -87,21 +87,26 @@ h2.question-card__titel {
 	background: white;
 	border: 1px solid #f75e05;
 }
-.qustion-card__answer {
+.question-card__answer {
 	display: flex;
 	justify-content: space-between;
 }
 .answer__item:not(:last-child) {
+	margin: 0 20px 0 0;
 }
 
 @media screen and (max-width: 600px) {
-	.qustion-card__answer {
+	.question-card__answer {
 		flex-direction: column;
-		text-align: center;
 	}
 	.answer__item:not(:last-child) {
 		margin: 0 0 1rem 0;
 	}
+}
+
+.question-card__column {
+	display: flex;
+	justify-content: center;
 }
 
 .footer {
