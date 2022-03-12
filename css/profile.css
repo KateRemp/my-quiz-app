@@ -1,0 +1,30 @@
+@import "null.css";
+@import "style.css";
+
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ================================================================ */
+.profile-card__container {
+	display: flex;
+	height: 150px;
+	align-items: center;
+}
+.profile-card__photo {
+	width: 132px;
+	height: 132px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 1px solid black;
+	position: relative;
+}
+.photo {
+	display: block;
+	width: auto;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: -45px;
+}

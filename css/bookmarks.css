@@ -1,0 +1,23 @@
+@import "null.css";
+@import "style.css";
+
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ================================================================ */
+
+.icon {
+	display: block;
+	width: 30px;
+	height: 40px;
+	background: url(../img/icons/bookmark-3.svg) center/cover no-repeat;
+	position: absolute;
+	top: -15px;
+	right: 7px;
+}
+
+.footer__bookmark {
+	background: url(../img/icons/bookmark-3.svg) center/cover no-repeat;
+}

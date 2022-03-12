@@ -1,0 +1,140 @@
+@import "null.css";
+
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ================================================================ */
+
+.content {
+	max-width: 1076px;
+	margin: 90px auto;
+}
+
+.header {
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+	border-bottom: 1px solid black;
+}
+.header__container {
+	padding: 10px;
+	border: 1px solid #f75e05;
+}
+.header__titel {
+	line-height: 150%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+}
+
+.main__container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.question-card {
+	padding: 1em;
+	border: 1px solid #f75e05;
+	border-radius: 5px;
+	margin: 0 0 2rem 0;
+	position: relative;
+}
+.icon {
+	display: block;
+	width: 30px;
+	height: 40px;
+	background: url(../img/icons/bookmark-4.svg) center/cover no-repeat;
+	position: absolute;
+	top: -15px;
+	right: 7px;
+}
+
+.question-card__titel {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	margin: 0 0 1rem 0;
+}
+
+.question-card__text {
+	margin: 0 0 1rem 0;
+}
+
+.qustion-card__button {
+	text-align: center;
+}
+.button {
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 1rem;
+	line-height: 300%;
+	text-align: center;
+	letter-spacing: 0.5px;
+	color: white;
+	background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+	border-radius: 4px;
+	padding: 0px 32px;
+	margin: 0 0 2rem 0;
+}
+
+.button:hover {
+	color: #ff3f3a;
+	background: white;
+	border: 1px solid #f75e05;
+}
+.qustion-card__answer {
+	display: flex;
+	justify-content: space-between;
+}
+.answer__item:not(:last-child) {
+}
+
+@media screen and (max-width: 600px) {
+	.qustion-card__answer {
+		flex-direction: column;
+		text-align: center;
+	}
+	.answer__item:not(:last-child) {
+		margin: 0 0 1rem 0;
+	}
+}
+
+.footer {
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+	background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+	border-top: 1px solid black;
+}
+.footer__nav {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 15px 15px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.link {
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+.footer__landingpage {
+	background: url(../img/icons/home-3.svg) center/cover no-repeat;
+}
+.footer__bookmark {
+	background: url(../img/icons/bookmark-4.svg) center/cover no-repeat;
+}
+.footer__create {
+	background: url(../img/icons/page.svg) center/cover no-repeat;
+}
+.footer__profile {
+	background: url(../img/icons/user.svg) center/cover no-repeat;
+}
