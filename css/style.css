@@ -6,7 +6,6 @@
 	overflow: hidden;
 }
 /* ================================================================ */
-
 .content {
 	max-width: 1076px;
 	margin: 90px auto;
@@ -25,7 +24,7 @@
 	padding: 10px;
 	border: 1px solid #f75e05;
 }
-.header__titel {
+h1.header__titel {
 	line-height: 150%;
 	text-align: center;
 	text-transform: uppercase;
@@ -55,7 +54,7 @@
 	right: 7px;
 }
 
-.question-card__titel {
+h2.question-card__titel {
 	font-size: 1.2rem;
 	text-transform: uppercase;
 	margin: 0 0 1rem 0;
@@ -65,10 +64,11 @@
 	margin: 0 0 1rem 0;
 }
 
-.qustion-card__button {
-	text-align: center;
-}
 .button {
+	text-align: center;
+	margin: 0 0 2rem 0;
+}
+.button__link {
 	text-transform: uppercase;
 	display: inline-block;
 	font-size: 1rem;
@@ -79,10 +79,10 @@
 	background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
 	border-radius: 4px;
 	padding: 0px 32px;
-	margin: 0 0 2rem 0;
+	border: 1px solid white;
 }
 
-.button:hover {
+.button__link:hover {
 	color: #ff3f3a;
 	background: white;
 	border: 1px solid #f75e05;

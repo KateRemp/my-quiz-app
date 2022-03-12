@@ -2,23 +2,22 @@
 @import "style.css";
 
 /* ================================================================ */
-.wrapper {
-	min-height: 100%;
-	overflow: hidden;
-}
-/* ================================================================ */
-.profile-card__container {
+
+.profile-card__photo-and-name {
 	display: flex;
 	height: 150px;
 	align-items: center;
+	margin: 0 0 1.5rem 0;
 }
-.profile-card__photo {
+.profile-card__avatar {
 	width: 132px;
 	height: 132px;
 	overflow: hidden;
 	border-radius: 50%;
 	border: 1px solid black;
 	position: relative;
+	margin: 0 1rem 0 0;
+	flex: 0 0 132px;
 }
 .photo {
 	display: block;
@@ -27,4 +26,53 @@
 	position: absolute;
 	top: 0px;
 	left: -45px;
+}
+.name {
+	flex: 1 1 auto;
+}
+
+.profile-card__container {
+	margin: 0 0 3rem 0;
+}
+h3 {
+	font-size: 1.1rem;
+	text-transform: uppercase;
+}
+.profile-card__skill-icon {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.skill-icon__item {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	border: 1px solid black;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgb(255, 255, 255);
+	margin: 20px 0 20px 0;
+	padding: 10px;
+	background: url() 50% 50% / contain no-repeat;
+}
+.red {
+	background-color: red;
+}
+.blue {
+	background-color: blue;
+}
+.yellow {
+	background-color: yellow;
+}
+.green {
+	background-color: green;
+}
+
+.profile-card__about-skills {
+	margin: 0 0 4rem 0;
+}
+.footer__landingpage {
+	background: url(../img/icons/home.svg) center/cover no-repeat;
+}
+.footer__profile {
+	background: url(../img/icons/user-2.svg) center/cover no-repeat;
 }

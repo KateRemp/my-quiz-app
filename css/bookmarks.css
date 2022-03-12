@@ -18,6 +18,9 @@
 	right: 7px;
 }
 
+.footer__landingpage {
+	background: url(../img/icons/home.svg) center/cover no-repeat;
+}
 .footer__bookmark {
 	background: url(../img/icons/bookmark-3.svg) center/cover no-repeat;
 }
