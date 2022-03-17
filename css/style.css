@@ -1,4 +1,5 @@
 @import "null.css";
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
 
 /* ================================================================ */
 .wrapper {
@@ -6,6 +7,10 @@
 	overflow: hidden;
 }
 /* ================================================================ */
+body {
+	font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
 .content {
 	max-width: 1076px;
 	margin: 0 auto;
@@ -69,9 +74,10 @@ h2.question-card__titel {
 	margin: 0 0 2rem 0;
 }
 .button__link {
+	font-family: "Times New Roman", Times, serif;
 	text-transform: uppercase;
 	display: inline-block;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	line-height: 300%;
 	text-align: center;
 	letter-spacing: 0.5px;
@@ -87,11 +93,25 @@ h2.question-card__titel {
 	background: white;
 	border: 1px solid #f75e05;
 }
+
+.add-block {
+	display: none;
+}
+.active {
+	display: block;
+}
+
 .question-card__answer {
 	display: flex;
 	justify-content: space-between;
 }
-.answer__item:not(:last-child) {
+
+.answer-item {
+	border: 1px solid #f75e05;
+	border-radius: 4px;
+	padding: 3px;
+}
+.answer-item:not(:last-child) {
 	margin: 0 20px 0 0;
 }
 
@@ -99,7 +119,7 @@ h2.question-card__titel {
 	.question-card__answer {
 		flex-direction: column;
 	}
-	.answer__item:not(:last-child) {
+	.answer-item:not(:last-child) {
 		margin: 0 0 1rem 0;
 	}
 }
